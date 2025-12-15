@@ -1,0 +1,39 @@
+class Password()
+
+{
+    static void Main()
+    {
+
+        string CorrectPassword = "1234";
+        int attemps = 0;
+        int maxAttemps = 3;
+
+        while (attemps < maxAttemps)
+        {
+            attemps++;
+            Console.WriteLine("Попытка" + attemps);
+            Console.WriteLine("Введите пароль:");
+            string InputPassword = Console.ReadLine();
+
+            if (InputPassword == CorrectPassword)
+            {
+                Console.WriteLine("Доступ разрешён");
+                break;
+
+            }
+
+            else if (attemps == maxAttemps)
+            {
+                Console.WriteLine("Доступ запрещён");
+            }
+
+            else
+            {
+                Console.WriteLine("Пароль неверный. Попробуйте еще раз");
+            }
+        }
+
+      
+    }
+
+}

@@ -1,0 +1,31 @@
+int[] grades = { 5, 3, 3, 4, 4, 2, 5 };
+
+double sr = 0;
+
+for (int i = 0; i < grades.Length; i++)
+{
+    sr += grades[i];
+}
+sr = sr / grades.Length;
+
+int countFives = 0;
+
+for (int i = 0; i < grades.Length; i++)
+{
+   if (grades[i] == 5)
+    {
+        countFives++; 
+    }
+}
+int countTwos = 0;
+
+for (int i = 0; i < grades.Length; i++)
+{
+    if (grades[i] == 2)
+    {
+        countTwos++;
+    }
+}
+Console.WriteLine("Средний балл: " + sr);
+Console.WriteLine("Количество пятёрок: " +  countFives);
+Console.WriteLine("Количество двоек: " + countTwos);
