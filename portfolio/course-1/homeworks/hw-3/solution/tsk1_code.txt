@@ -1,0 +1,102 @@
+class Calculator
+
+{
+    public static double Add(double a, double b)
+
+    {
+        return a + b;
+    }
+
+    public static double Substract(double a, double b)
+
+    {
+        return a - b;
+    }
+
+    public static double Multiply(double a, double b)
+
+    {
+        return a * b;
+    }
+
+    public static double Divide(double a, double b)
+
+    {
+        if (b == 0)
+
+        {
+            Console.WriteLine("На ноль делить нельзя!");
+        }
+ 
+        return a / b;
+    }
+
+    static void Main()
+
+    {
+        Console.WriteLine("Калькулятор");
+        
+        while (true)
+
+        {
+            Console.WriteLine("Введите первое число: ");
+            string input1 = Console.ReadLine();
+
+            if (input1 == "exit")
+
+            {
+                Console.WriteLine("Программа завершена");
+                break;
+            }
+
+            double num1 = Convert.ToDouble(input1);
+
+            Console.WriteLine("Введите операцию: ");
+            string operation = Console.ReadLine();
+
+            Console.WriteLine("Введите второе число: ");
+            string input2 = Console.ReadLine();
+            double num2 = Convert.ToDouble(input2);
+
+            double result = 0;
+
+            if (operation == "+")
+
+            {
+                result = Add(num1, num2);
+            }
+
+            else if (operation == "-")
+
+            {
+                result = Substract(num1, num2);
+            }
+
+            else if (operation == "*")
+
+            {
+                result = Multiply(num1, num2);
+            }
+
+
+            else if (operation == "/")
+
+            {
+                result = Divide(num1, num2);
+            }
+
+            else
+
+            {
+                Console.WriteLine("Нет такой операции");
+                continue;
+            }
+
+            Console.WriteLine("Результат: " + result);
+
+        }
+
+    }
+            
+
+}

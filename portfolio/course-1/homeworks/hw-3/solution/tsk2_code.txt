@@ -1,0 +1,79 @@
+class Phone
+
+{
+    public string Model { get; set; }
+    public int Battery { get; set; }
+
+    public Phone(string model, int battery = 50)
+    {
+        Model = model;
+        Battery = battery;
+    }
+
+    public void Charge(int amount)
+
+    {
+        if (amount <= 0)
+
+        {
+            Console.WriteLine("Число должно быть положительным");
+        }
+
+        Battery += amount;
+
+        if (Battery > 100)
+
+        {
+            Console.WriteLine("Телефон заряжен");
+            Battery = 100;
+        }
+
+        else
+
+        {
+            Console.WriteLine("Телефон заряжен на " + amount + "%");
+        }
+    }
+
+    public void Use(int amount)
+    {
+        if (amount <= 0)
+
+        {
+            Console.WriteLine("Заряд должен быть положительным");
+        }
+
+        Battery -= amount;
+
+        if (Battery <= 0)
+
+        {
+            Console.WriteLine($"Телефон разряжен");
+            Battery = 0;
+        }
+
+        else
+
+        {
+            Console.WriteLine($"Текущий заряд: {Battery}%");
+        }
+    }
+
+    public void PrintInfo()
+    {
+        Console.WriteLine("Информация о телефоне");
+        Console.WriteLine("Модель: " + Model);
+        Console.WriteLine($"Заряд батареи: {Battery}%");
+    }
+
+    static void Main()
+    {
+        Phone phone = new Phone("Samsung Galaxy A52", 80);
+
+        phone.Charge(15);
+        Console.WriteLine($"Заряд: {phone.Battery}%");
+
+        phone.Use(10);
+        Console.WriteLine($"Заряд: {phone.Battery}%");
+    }
+}
