@@ -1,0 +1,43 @@
+public class Movie
+{
+    public string Title { get; set; }
+    public string Genre { get; set; }
+    public int Rating { get; set; }
+
+    public Movie() : this("Без названия", "Неизвестен", 0)
+    {
+
+    }
+    public Movie(string title) : this(title, "Неизвестен", 0)
+    {
+
+    }
+    public Movie(string title, string genre, int rating)
+    {
+        Title = title;
+        Genre = genre;
+        Rating = rating;
+    }
+
+    public void PrintInfo() 
+    {
+        Console.WriteLine($"Название: {Title}");
+        Console.WriteLine($"Жанр: {Genre}");
+        Console.WriteLine($"Рейтинг: {Rating}");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        var m1 = new Movie();
+        var m2 = new Movie("Молчание Ягнят");
+        var m3 = new Movie("Не смотрите наверх", "Научная фантастика", 7);
+
+        m1.PrintInfo();
+        m2.PrintInfo();
+        m3.PrintInfo();
+
+    }
+}
