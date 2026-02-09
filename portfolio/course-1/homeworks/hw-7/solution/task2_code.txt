@@ -1,0 +1,48 @@
+public abstract class Character
+{
+    public string Name { get; set; }
+    public abstract void Attack();
+}
+
+public class Warrior: Character
+{
+    public override void Attack()
+    {
+        Console.WriteLine("Воин атакует мечом!");
+    }
+}
+
+public class Mage : Character
+{
+    public override void Attack()
+    {
+        Console.WriteLine("Маг выпускает огненный шар!");
+    }
+}
+
+public class Archer : Character
+{
+    public override void Attack()
+    {
+        Console.WriteLine("Лучник стреляет из лука!");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Character[] team =
+    {
+        new Warrior { Name = "Алекс" },
+        new Mage { Name = "Лия" },
+        new Archer { Name = "Робин" }
+    };
+
+        foreach (var c in team)
+        {
+            Console.Write($"{c.Name}: ");
+            c.Attack();
+        }
+    }
+}
