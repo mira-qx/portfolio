@@ -1,0 +1,159 @@
+{
+  "Groups": [
+    {
+      "Group": "9A",
+      "Days": [
+        {
+          "Day": "Monday",
+          "Lessons": [
+            {
+              "Time": "09:00",
+              "Subject": "Math",
+              "Teacher": "Ivanov"
+            },
+            {
+              "Time": "10:00",
+              "Subject": "History",
+              "Teacher": "Sizov"
+            },
+            {
+              "Time": "11:00",
+              "Subject": "Geography",
+              "Teacher": "Kuznetsova"
+            },
+            {
+              "Time": "12:00",
+              "Subject": "Russian",
+              "Teacher": "Belyayeva"
+            },
+            {
+              "Time": "13:00",
+              "Subject": "Chemistry",
+              "Teacher": "Goncharova"
+            }
+          ]
+        },
+        {
+          "Day": "Tuesday",
+          "Lessons": [
+            {
+              "Time": "09:00",
+              "Subject": "Physics",
+              "Teacher": "Petrova"
+            },
+            {
+              "Time": "10:00",
+              "Subject": "Physical Education",
+              "Teacher": "Nikolaev"
+            },
+            {
+              "Time": "11:00",
+              "Subject": "Biology",
+              "Teacher": "Markova"
+            },
+            {
+              "Time": "12:00",
+              "Subject": "Math",
+              "Teacher": "Ivanov"
+            },
+            {
+              "Time": "13:00",
+              "Subject": "Russian",
+              "Teacher": "Belyayeva"
+            }
+          ]
+        },
+        {
+          "Day": "Wednesday",
+          "Lessons": [
+            {
+              "Time": "09:00",
+              "Subject": "English",
+              "Teacher": "Voronova"
+            },
+            {
+              "Time": "10:00",
+              "Subject": "History",
+              "Teacher": "Sizov"
+            },
+            {
+              "Time": "11:00",
+              "Subject": "Math",
+              "Teacher": "Ivanov"
+            },
+            {
+              "Time": "12:00",
+              "Subject": "Literature",
+              "Teacher": "Belyayeva"
+            },
+            {
+              "Time": "13:00",
+              "Subject": "Russian",
+              "Teacher": "Belyayeva"
+            }
+          ]
+        },
+        {
+          "Day": "Thursday",
+          "Lessons": [
+            {
+              "Time": "09:00",
+              "Subject": "Russian",
+              "Teacher": "Belyayeva"
+            },
+            {
+              "Time": "10:00",
+              "Subject": "Biology",
+              "Teacher": "Markova"
+            },
+            {
+              "Time": "11:00",
+              "Subject": "English",
+              "Teacher": "Voronova"
+            },
+            {
+              "Time": "12:00",
+              "Subject": "Physics",
+              "Teacher": "Petrova"
+            },
+            {
+              "Time": "13:00",
+              "Subject": "Literature",
+              "Teacher": "Belyayeva"
+            }
+          ]
+        },
+        {
+          "Day": "Friday",
+          "Lessons": [
+            {
+              "Time": "09:00",
+              "Subject": "Literature",
+              "Teacher": "Belyayeva"
+            },
+            {
+              "Time": "10:00",
+              "Subject": "Math",
+              "Teacher": "Ivanov"
+            },
+            {
+              "Time": "11:00",
+              "Subject": "Physical Education",
+              "Teacher": "Nikolaev"
+            },
+            {
+              "Time": "12:00",
+              "Subject": "History",
+              "Teacher": "Sizov"
+            },
+            {
+              "Time": "13:00",
+              "Subject": "Chemistry",
+              "Teacher": "Goncharova"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
