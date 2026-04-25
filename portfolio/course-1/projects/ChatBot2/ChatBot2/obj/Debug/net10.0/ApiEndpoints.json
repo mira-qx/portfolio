@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "ChatBot.Controllers.ChatTestController",
+    "Method": "Test",
+    "RelativePath": "api/chat/test",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ChatBot.Controllers.ChatTestRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChatBot.Controllers.UpdateController",
+    "Method": "Post",
+    "RelativePath": "api/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "update",
+        "Type": "ChatBot.Dtos.TelegramUpdate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
